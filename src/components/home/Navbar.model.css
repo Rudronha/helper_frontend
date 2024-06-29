@@ -1,0 +1,117 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background: transparent;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 24px;
+}
+
+.navbar-logo {
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 60%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+img{
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 960px) {
+
+  .navbar-search {
+    width: 100%;
+    order: 2;
+  }
+
+  .navbar-logo {
+    order: 1;
+  }
+
+  .navbar-icons {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .navbar-container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    width: 45px;
+    height: 20px;
+  }
+
+  img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar-icons{
+    padding-top: 48px;
+    flex-direction: column-reverse;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}

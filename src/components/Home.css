@@ -1,0 +1,45 @@
+/* src/components/Home.css */
+
+.home-container {
+    background-image: url('../image/joe-woods.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 1200px) {
+  .home-container {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    background-size: cover; /* Keep the image covered for tablet screens */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    background-size: cover; /* Keep the image covered for mobile screens */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    background-size: cover; /* Keep the image covered for very small screens */
+    padding: 5px;
+  }
+}
