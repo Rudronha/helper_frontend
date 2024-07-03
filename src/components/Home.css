@@ -6,12 +6,13 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 /* Ensuring responsiveness */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .home-container {
     background-size: cover;
   }
@@ -26,7 +27,6 @@
 @media (max-width: 768px) {
   .home-container {
     background-size: cover; /* Keep the image covered for tablet screens */
-    padding: 15px;
   }
 }
 

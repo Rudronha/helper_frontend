@@ -10,6 +10,8 @@
   position: sticky; /* Makes the navbar sticky */
   top: 0;
   z-index: 10;
+  padding-top: 1.5%;
+  padding-left: .5%;
 }
 
 .navbar-container {
@@ -38,11 +40,17 @@
 }
 
 .search-input {
-  width: 60%;
-  padding: 8px;
-  border: none;
-  border-radius: 10px;
+  width: 70%;
+  height: 45px;
+  padding-left: 30px;
+  border:none;
+  outline: none;
+  border-radius: 20px;
   font-size: 1rem;
+}
+
+.search-input:focus {
+  background-color: #fafafa; /* Change this to your desired color */
 }
 
 .navbar-icons {
@@ -61,10 +69,16 @@
   display: none;
 }
 
+.logo-img{
+  height: 50px;
+  width: 50px;
+}
+
 img{
   height: 40px;
   width: 40px;
 }
+
 
 @media screen and (max-width: 960px) {
 
@@ -94,23 +108,29 @@ img{
     padding-left: 0px;
     padding-right: 0px;
   }
-
-  .navbar-logo {
-    display: flex;
-    width: 45px;
-    height: 20px;
+  
+  .navbar-search{
+    padding-left: 5px;
   }
-
-  img{
-    width: 35px;
-    height: 35px;
-  }
-
+  
   .navbar-icons{
-    padding-top: 48px;
-    flex-direction: column-reverse;
+    margin-top: 6px;
+  }
+  
+  img{
+    width: 30px;
+    height: 30px;
   }
 
+  .logo-img{
+    width: 45px;
+    height: 45px;
+  }
+
+  .navbar-icon{
+    margin-left: 5px;
+  }
+  
   .search-input {
     width: 100%;
   }

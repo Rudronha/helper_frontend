@@ -1,10 +1,12 @@
 /* src/components/ProductList.css */
 .product-list {
+    margin-left: 10%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1%;
     justify-content: center;
-    padding: 20px;
+    padding-top: 3%;
   }
   
   .product-card {
@@ -12,9 +14,10 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    width: 300px;
+    width: 32%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 1%;
   }
   
   .product-card img {
@@ -34,13 +37,21 @@
     color: #666;
   }
   
+  @media screen and (max-width: 1024px) {
+    
+  }
   @media screen and (max-width: 768px) {
     
   }
 
   @media screen and (max-width: 480px) {
+    .product-list{
+      margin-left: 0%;
+      width: 100%;
+    }
     .product-card{
       width: 400px;
     }
+
   }
   

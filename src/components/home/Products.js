@@ -23,7 +23,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('/api/products/all');
+        //const response = await axios.get('/api/products/all');
         //setProducts(response.data.products);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -33,9 +33,6 @@ const Products = () => {
     //fetchProducts();
   }, []);
 
-  if (!productData || !productData.products) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="product-list">
