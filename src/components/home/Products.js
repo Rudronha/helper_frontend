@@ -1,7 +1,7 @@
 // src/components/ProductList.js
 import React, { useEffect, useState } from 'react';
 import axios from '../../axiosConfig';
-import './Products.model.css';
+import './Products.css';
 
 import img1 from '../../image/img1.jpg';
 import img2 from '../../image/img2.jpg';

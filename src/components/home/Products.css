@@ -1,12 +1,15 @@
 /* src/components/ProductList.css */
 .product-list {
-    margin-left: 10%;
-    width: 90%;
+    position: absolute;
+    top: 45px;    /* Distance from top */
+    left: 60px;   /* Distance from left */
+    right: 0;     /* Stretch to the right edge */
+    bottom: 0;    /* Stretch to the bottom edge */
     display: flex;
     flex-wrap: wrap;
     gap: 1%;
     justify-content: center;
-    padding-top: 3%;
+    margin-top: 10px;
   }
   
   .product-card {

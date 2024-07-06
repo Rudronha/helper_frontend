@@ -4,9 +4,9 @@ import StepTwo from './signup/StepTwo';
 import StepThree from './signup/StepThree';
 import StepFour from './signup/StepFour';
 import StepFive from './signup/StepFive';
-import styles from './Signup.module.css';
+import styles from './Signup.css';
 import axios from 'axios';
-import backgroundImage from '../image/joe-woods.jpg';
+import backgroundImage from '../../image/joe-woods.jpg';
 
 const Signup = () => {
   const [step, setStep] = useState(1);
